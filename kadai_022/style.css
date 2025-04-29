@@ -26,28 +26,28 @@ main{
 }
 .contents{
     display: flex;
+    align-items: center;
     flex-basis: 25%;
     padding: 10px 15px 10px 15px;
     margin: 20px 0 20px 0;
-    align-items: center;
     border: 3px solid rgb(238, 204, 204)
 }
-.content h2{
+.contents h2{
     font-size: 25px;
-    border-bottom: 3px,dotted,rgb(236, 122, 122);
+    border-bottom: 3px dotted rgb(236, 122, 122);
 }
-.content h2::before{
+.contents h2::before{
     content: "●";
     color: rgb(239, 111, 139);
 }
-.content p::nth-of-type(2)::first-letter{
+.contents p::nth-of-type(2)::first-letter{
     font-weight: bold;
 }
-.content h2::first-letter{
+.contents h2::first-letter{
     color: rgb(97, 206, 249);
 }
 footer{
-    margin: 10px,0,10px,0;
+    margin: 10px 0 10px 0;
     width: 70%;
 }
 footer {
@@ -67,10 +67,10 @@ footer a:visited{
 }
 @media screen and (max-width: 768px){
     #parent{ flex-direction: column; }
-    .content h2{
+    .contents h2{
         font-size: 30px;
     }
-    .content p{
+    .contents p{
         font-size: 25px;
     }
     #parent{
