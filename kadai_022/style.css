@@ -24,13 +24,13 @@ main{
     display: flex;
     justify-content: space-around;
 }
-.content{
+.contents{
     display: flex;
     flex-basis: 25%;
-    padding: 10px,15px,10px,15px;
-    margin: 20px,0,20px,0;
+    padding: 10px 15px 10px 15px;
+    margin: 20px 0 20px 0;
     align-items: center;
-    border: 3px,solid,rgb(238, 204, 204)
+    border: 3px solid rgb(238, 204, 204)
 }
 .content h2{
     font-size: 25px;
@@ -40,7 +40,7 @@ main{
     content: "●";
     color: rgb(239, 111, 139);
 }
-.content p::nth-of-type(2){
+.content p::nth-of-type(2)::first-letter{
     font-weight: bold;
 }
 .content h2::first-letter{
@@ -65,7 +65,8 @@ footer a:hover{
 footer a:visited{
     color: rgb(193, 234, 251);
 }
-@media screen and (max-width: 1024px){
+@media screen and (max-width: 768px){
+    #parent{ flex-direction: column; }
     .content h2{
         font-size: 30px;
     }
